@@ -1,0 +1,60 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mexico Shape with CSS Dots</title>
+  <style>
+    /* Container to center the map */
+    .map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    /* Style for the Mexico SVG */
+    .mexico-map {
+      width: 50%;
+      height: auto;
+      fill: none;
+      stroke: #808080;
+      stroke-width: 2;
+    }
+
+    /* Add small gray dots */
+    .mexico-map .dot {
+      fill: gray;
+      stroke: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="map-container">
+    <!-- Mexico Shape SVG -->
+    <svg class="mexico-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+      <!-- Mexico shape (simplified for example) -->
+      <path d="M200,900 L300,850 L350,800 L400,750 L450,720 L500,700 L550,600 L600,580 L650,540 L750,500 L800,450 L850,400 L900,350 L950,300 L1000,250 L850,100 L800,150 L750,200 L700,250 L650,300 L600,350 L550,400 L500,450 L450,500 L400,550 L350,600 L300,650 L250,700 L200,750 L150,800 L100,850 L50,900 Z" />
+
+      <!-- Add some random dots inside Mexico -->
+      <circle class="dot" cx="200" cy="800" r="5"/>
+      <circle class="dot" cx="350" cy="750" r="5"/>
+      <circle class="dot" cx="450" cy="700" r="5"/>
+      <circle class="dot" cx="600" cy="600" r="5"/>
+      <circle class="dot" cx="750" cy="500" r="5"/>
+      <circle class="dot" cx="850" cy="400" r="5"/>
+    </svg>
+  </div>
+
+
+  <img source"https://github.com/arturokishi/irononecap/blob/main/world.jpg?raw=true">
+
+</body>
+</html>
+

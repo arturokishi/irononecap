@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ddd;
+  }
+  
+  .get-in-touch {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    margin-top: 100px;
+}
+.logo1 {
+    text-align: center;
+}
+.logo1 img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.logo1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.logo1 p {
+    margin-bottom: 10px;
+    color: #555;
+}
+.logo1 a {
+    text-decoration: none;
+    color: #007bff;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-media a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+}
+.social-media i {
+    font-size: 1.5rem;
+}
+.contact-form {
+    width: 600px;
+    padding: 30px;
+    background-color: grey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+.contactform2 {
+    width: 400px;
+    padding: 30px;
+    background-color: blue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 200px;
+}
+
+
+
+
+
+

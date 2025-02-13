@@ -1,0 +1,507 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    background-color: rgba(17, 32, 139, 0.8); /* Black with 70% opacity */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+
+  .nav-links li {
+    margin: 0 20px; /* Adds horizontal spacing between the nav items */
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ddd;
+  }
+  
+  .get-in-touch {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ 
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-container iframe {
+    width: 120%;
+    height: 80vh;
+    border: none;
+  }
+
+
+
+
+
+
+
+
+.text1{
+
+    margin-top: 50px;
+    font-style: normal;
+    font-size: 100%;
+    margin-right: 150px;
+    margin-left: 150px;
+
+
+
+}
+
+
+
+
+.counter-wrapper {
+  position: relative;
+  width: 100%; /* Make the wrapper take the full width */
+  margin-top: 100px;
+}
+
+.black-line {
+  position: absolute;
+  top: 30%; /* Adjust the position of the line */
+  left: 0;
+  width: 100%; /* Full page width */
+  height: 5px; /* Height of the black line */
+  background-color: black;
+  z-index: -1; /* Position behind the counter-container */
+  margin-top: 10px;
+}
+
+.counter-container {
+  position: relative; /* Allows the black line to be positioned behind */
+  width: 40%;
+  height: 40%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 15px;
+  z-index: 1; /* Ensures the container is above the black line */
+}
+
+h1, h2, p {
+  margin-bottom: 10px; /* Adjusted margin for elements inside the container */
+}
+
+
+.counter-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.counter-number {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.container1 h2 {
+
+    align-items: left;
+
+
+
+
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    height: 300;
+    text-align: center;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    align-items: left;
+    color: #0056b3;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ourteam{
+
+
+    background-color: rgb(11, 11, 139);
+    padding: 50px;
+    align-items: center;
+}
+
+
+.ourteam h2{
+
+text-align: center;
+color: #fff;
+;
+}
+
+
+
+
+
+.imgcontainer{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+  .ourteam img{
+
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+   
+    
+}
+
+.whiteline {
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  margin: 10px auto; /* This will center the line */
+  display: block; /* Ensure the line behaves as a block element */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .person {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.person img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    z-index: 0;
+}
+
+.person .gray-rectangle {
+    position: absolute;
+    bottom: 10px; /* Adjust to move the rectangle up/down */
+    left: -10px; /* Adjust to move the rectangle left/right */
+    background-color: rgba(128, 128, 128, 0.8); /* Gray with transparency */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1; /* Ensure it appears above the image */
+    width: calc(100% - 20px); /* Rectangle will span most of the width of the image */
+    color: white;
+    text-align: left; /* Aligns the text inside to the left */
+}
+
+.person .text {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left; /* Ensures the text itself is aligned left */
+}
+
+.container3 {
+  text-align: center; /* Centers the images horizontally */
+  display: block; /* Display block to align content */
+}
+
+.small-text {
+  font-size: 5px; /* Adjust the size as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+  .quote {
+    text-align: center; /* center the text */
+    margin: 40px auto; /* add some margin and center the div */
+    max-width: 800px; /* set a maximum width for the div */
+    padding: 20px; /* add some padding around the text */
+    background: none; /* remove any background */
+    border: none; /* remove any border */
+    box-shadow: none; /* remove any box shadow */
+    color: white; /* set the text color to a dark gray */
+    font-size: 24px; /* set the font size */
+    font-family: Arial, sans-serif; /* set the font family */
+    
+    
+  }
+
+
+
+  .firstimg {
+
+    background-color: gray;
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+  header {
+    background-color: rgb(49, 48, 48); /* Set the background color to gray */
+    width: 100%; /* Make the header span the entire width of the page */
+    height: 300px; /* Set the height of the header */
+    display: flex; /* Use flexbox to align content */
+    align-items: center; /* Vertically center the content */
+    padding-left: 70px; /* Add left padding */
+    z-index: 0;
+}
+
+header h1 {
+    color: white; /* Set the text color to white */
+    font-size: 5rem; /* Set the font size */
+    margin: 0; /* Remove default margin */
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.news-image {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+.news-text {
+    max-width: 600px;
+    text-align: center;
+}
+
+.news-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: blue;
+}
+
+.news-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+/* Adjusting the position of the images */
+.news1, .news2, .news3, .news4 {
+    width: 15%;
+    height: 15rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.news1 {
+    margin-top: -150px;
+    margin-left: -1000px;
+}
+
+.news2 {
+    margin-top: -240px;
+    margin-left: -300px;
+}
+
+.news3 {
+    margin-top: -240px;
+    margin-left: 400px;
+}
+
+.news4 {
+    margin-top: -240px;
+    margin-left: 1100px;
+}
+
+/* Ensures that the images are positioned above the gray header */
+.news-container {
+    margin-top: -100px; /* Optional: Fine-tune this based on your design */
+}
+
+.container1 {
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

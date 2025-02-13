@@ -1,0 +1,1361 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAV*/
+/* NAV*/
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 70% opacity */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start; /* Aligns the logo to the left */
+  align-items: center; /* Vertically center the logo */
+  max-width: 100px; /* Constrains the logo to a max width */
+  max-height: 50px; /* Constrains the logo to a max height */
+}
+
+.logo img {
+  width: 100%; /* Ensures the image scales according to the container */
+  height: auto; /* Keeps the aspect ratio intact */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Keeps nav items centered */
+  flex-grow: 1; /* Ensures it occupies all available space between logo and buttons */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.nav-links li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  border-right: 1px solid white;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+}
+
+.get-in-touch {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.get-in-touch button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* White button */
+.white-button {
+  background-color: white;
+  color: black;
+}
+
+.white-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Black button */
+.black-button {
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 70% opacity */
+  color: white;
+  border-color: white;
+}
+
+.black-button:hover {
+  background-color: #333;
+}
+
+
+
+
+
+/* NAV*/
+/* NAV*/
+
+
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  width: 120%;
+  height: 80vh;
+  border: none;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  scroll-snap-align: start;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+}
+
+.slide:last-child {
+  margin-right: 0;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content h2 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF5733;
+}
+
+
+
+
+
+
+.container1 {
+  width: 100%;
+  /*max-width: 800px;*/
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.background {
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.title .letter {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title .text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #353535;
+  align-items: left;
+}
+
+.description {
+  margin-top: 90px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #4d4d4d;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 80%;
+}
+
+.description-text {
+  max-width: 100%;
+}
+
+
+
+.marquee {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marquee span {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #4d4d4d;
+  text-align: center;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.graphs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.graph-container {
+  flex-basis: calc(31% - 2rem);
+  margin-bottom: 2rem;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.graph-container h2 {
+  padding: 1rem;
+  background-color: #353535;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.graph-content {
+  padding: 1rem;
+  height: 200px;
+}
+
+
+
+/* Image with blue line */
+
+.image-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.image-container-service {
+  position: relative;
+  width: 75%; /* Adjusted width to make the image smaller */
+}
+
+.image-background-service {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  border: 1px solid black; /* Reduced the thickness of the background border */
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.image-container-service img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.text-container {
+  width: 50%; /* Set width of the text container */
+  margin-left: 10px; /* Reduced margin to bring the text closer to the image */
+ 
+
+}
+
+.text-with-line {
+  position: relative;
+  padding-left: 10px; /* Reduced space for the line */
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 20px; /* Adds space between paragraphs */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+ 
+}
+
+.text-with-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px; /* Thinner line */
+  height: 100%; /* Makes the line as tall as the content */
+  background-color: blue; /* Blue color for the line */
+}
+
+.header-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adds space between the header and the first paragraph */
+  color: blue;
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+.text-container h3{
+
+  color: blue;
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+
+  margin-bottom: -25px;
+  font-size: 2.5rem;
+
+  font-weight: 400; 
+  
+}
+
+
+
+
+/* Image with blue line */
+
+
+
+
+
+
+/* Razones para elegirnos */
+
+
+
+.containerR {
+  display: flex;
+  height: 900px; /* Set a fixed height for the container */
+  width: 100%; /* Ensure the container is full-width */
+  margin-top: 40px;
+  margin-bottom: 30px;
+  position: relative; /* To allow overlapping */
+}
+
+.blue-rectangleR {
+  width: 50%;
+  background-color: rgb(8, 8, 148);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  padding: 30px;
+  color: white;
+  border-radius: 15px;
+  text-align: center; /* Ensures the text is centered */
+}
+
+/* Grouping headers and small text together */
+.text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center header and small text horizontally */
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Header styling */
+.text-group h1 {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  gap: 15px;
+  font-size: 3rem;
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* Icon Styling */
+.text-group i {
+  min-width: 50px; /* Ensures all icons align vertically */
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* Small text alignment */
+.text-group .small-text {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-left: 0; /* Aligns the small text with the header */
+}
+
+
+
+
+/* Right section with image and text */
+.right-section {
+  width: 50%; /* Takes 50% of the container width */
+  height: 100%; /* Full height of the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Start at the top to allow image to move up */
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  position: relative; /* Relative positioning for overlap */
+  z-index: 1; /* Ensure content is on top */
+  margin-top: 50px;
+}
+
+/* Centered content area */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Start at the top */
+  align-items: center;
+  text-align: center;
+  margin-top: -60px; /* Negative margin to push the image up */
+  z-index: 0; /* Set image behind the header text */
+}
+
+/* Image styling */
+.content img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers its container without being distorted */
+  z-index: 0; /* Image behind */
+  margin-top: -120px;
+}
+
+/* Text styling */
+.content p {
+  font-size: 1.2rem;
+  color: #333;
+  position: relative;
+  z-index: 2; /* Bring text on top of the image */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+/* Blue line under the header */
+.hblue {
+  width: 70%; /* Set the width of the blue line */
+  height: 40px; /* Make the line thinner */
+  background-color: blue; /* Blue color for the line */
+  margin: 10px 0; /* Space around the line */
+  margin-left: auto; /* Pushes the line to the right */
+  z-index: 1; /* Ensure the line is above the image */
+}
+
+.header-section {
+  text-align: right; /* Aligns the text to the right */
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 3; /* Ensures the header is above the image */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+  
+}
+
+.lower-section {
+  margin-top: -100px;
+  text-align: left; /* Aligns the text to the right */
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 3; /* Ensures the header is above the image */
+}
+
+
+.blue-bullet {
+  position: relative;
+  padding-left: 20px; /* Add space for the bullet */
+  text-align: left;
+}
+
+.blue-bullet::before {
+  content: '•'; /* Unicode character for bullet point */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: blue; /* Bullet color */
+  font-size: 1.5rem; /* Adjust the bullet size */
+  line-height: 1; /* Make sure it aligns vertically */
+}
+
+
+.blue-bullet-right {
+  position: relative;
+  text-align: right; /* Align text to the right */
+  padding-right: 20px; /* Add space for the bullet */
+}
+
+.blue-bullet-right::after {
+  content: '•'; /* Unicode character for bullet point */
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: blue; /* Bullet color */
+  font-size: 1.5rem; /* Adjust the bullet size */
+  line-height: 1; /* Align vertically */
+}
+
+/* Style for the smaller text */
+.small-text {
+  font-size: 0.8rem; /* Adjust font size to be smaller */
+  color: #e0e0e0; /* Set color for smaller text, optional */
+  text-align: center; /* Align text under the headers */
+  margin-top: -10px; /* Optional: Adjust spacing between header and text */
+}
+
+
+
+
+
+/* Razones para elegirnos */
+
+
+
+
+
+/* Beneficios */
+/* Beneficios */
+
+
+.dark-blue-background {
+  background-color: #003366; /* Darker blue color */
+  padding: 40px;
+  display: flex;
+  justify-content: center; /* Horizontally centers the blue-box */
+  height: 50vh; /* Set the height to full viewport height */
+  position: relative; /* To allow overlap positioning */
+  margin-top: 130px;
+}
+
+.blue-box {
+  background-color: blue; /* Lighter blue */
+  width: 80%;
+  height: 120%;
+  border-radius: 10px; /* Optional: rounded corners */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content inside */
+  align-items: center; /* Horizontally centers the content inside */
+  margin-top: -80px; /* Adjust this negative margin to pull the box upwards */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+}
+
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+
+.icon-container {
+  display: flex;
+  justify-content: space-between; /* Distribute icons horizontally */
+  gap: 40px; /* Adjust the gap between icons horizontally */
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #fff;
+  color: #003366;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #0055cc;
+  color: #fff;
+}
+
+
+/* Container for the top text and line */
+.text-line-container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; /* Space between the text-line-container and the h1 */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+/* Styling for the top text */
+.top-text {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 5px; /* Space between the text and the white line */
+  text-align: center;
+}
+
+/* Styling for the white line */
+.white-line3 {
+  width: 110%; /* Set the width of the white line */
+  height: 2px; /* Thin line */
+  background-color: white;
+}
+
+
+.icon-text i {
+  font-size: 90px; /* Increase icon size */
+  margin-bottom: 10px; /* Margin between the icon and the text */
+}
+
+.icon-text p {
+  font-size: 1.5rem; /* Increase text size */
+}
+
+
+/* Beneficios */
+/* Beneficios */
+
+
+
+
+
+
+
+
+/* BLOG */
+/* BLOG */
+
+
+
+.white-area-blog {
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.centered-text-blog {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+.dots {
+  display: inline-block;
+}
+
+.more-text {
+  display: block;
+  color: #333;
+  max-height: 0; /* Hide initially */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Smooth transition */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  align-items: center;
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+.white-area-blog .more-text.open {
+  max-height: 1000px; /* Adjust as needed */
+  transition: max-height 0.5s ease-in; /* Smooth transition when expanded */
+}
+
+.white-area-blog .more-text {
+  margin-top: 10px; /* Add a margin to push down text a little bit */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+
+.image-container2 {
+  position: relative; /* Ensures the text can be positioned inside this container */
+}
+
+.textDE {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  z-index: 10; /* Ensure it is above the image */
+  color: white; /* Set the text color to white so it's visible on the image */
+  font-size: 1.6rem; /* Adjust the font size as needed */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+.background1 {
+  width: 100%; /* Make the image fill the container */
+  height: auto;
+  display: block; /* Ensures the image is displayed as a block */
+}
+
+.person-image {
+  position: absolute;
+  bottom: -70px; /* Position the person image at the bottom */
+  left: 70px; /* Position the person image at the left */
+  width: 20%; /* Adjust the width */
+  height: 50%;
+  border-radius: 20%; /* This will make the image round */
+}
+
+
+
+/* BLOG */
+/* BLOG */
+
+
+
+/* Banner*/
+/* Banner */
+
+.banner img{
+
+  width: 100%;
+  align-items: center
+}
+
+
+.banner {
+  position: relative; /* Ensures the text is positioned relative to the container */
+  width: 100%;
+  height: 400px; /* Set the desired height for the image */
+}
+
+.banner img {
+  width: 100%; /* Makes the image cover the container */
+  height: 100%; /* Ensure the image takes up the full height of the container */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.text-container-banner {
+  position: absolute;
+  top: 10px; /* Adjust the distance from the top */
+  left: 10px; /* Adjust the distance from the left */
+  color: white; /* Set the text color to white for visibility */
+  z-index: 10; /* Ensure the text is above the image */
+}
+
+.text-container-banner h2, .text-container-banner h1 {
+  margin: 0;
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+.text-container-banner h2 {
+  font-size: 2rem; /* Adjust the font size as needed */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+.text-container-banner h1 {
+  font-size: 3.5rem; /* Adjust the font size as needed */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+
+/* Banner*/
+/* Banner */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "compass/css3";
+
+body {
+  font: 13px/1.3 'Lucida Grande', sans-serif;
+  color: #666;
+}
+
+.chart {
+  display: table;
+  table-layout: fixed;
+  width: 60%;
+  max-width: 700px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+  background-size: 100% 50px;
+  background-position: left top;
+}
+
+.chart li {
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  height: 200px;
+}
+
+.chart span {
+  margin: 0 1em;
+  display: block;
+  background: rgba(209, 236, 250, 0.75);
+  animation: draw 1s ease-in-out;
+}
+
+.chart span:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 5px 1em 0;
+  display: block;
+  text-align: center;
+  content: 'Label 1'; /* replace with the actual label */
+  word-wrap: break-word;
+}
+
+@keyframes draw {
+  0% {
+    height: 0;
+  }
+}
+
+
+
+
+
+
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%; /* Allow the full width of the container */
+  margin: 2rem auto;
+  gap: 3rem; /* Adds space between the image and text */
+}
+
+.image-container-service{
+  position: relative;
+  width: 35%; /* Keep this to maintain image size */
+}
+
+.image-background-service {
+  position: relative;
+  top: -20px; /* Increase the offset to separate more */
+  left: -20px; /* Increase the offset to separate more */
+  width: calc(100% + 20px); /* Adjust the width to match the new offset */
+  height: calc(100% + 20px); /* Adjust the height to match the new offset */
+  border: 3px solid orange; /* Only show the border */
+  border-radius: 15px; /* Match the image corners */
+  z-index: -1; /* Place behind the image */
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Adds rounded corners */
+  position: relative;
+  z-index: 1; /* Ensure the image stays on top */
+}
+
+.service-text {
+  flex: 1;
+  text-align: left; /* Align the text to the left */
+  padding-left: 1rem;
+}
+
+.service-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #00528C;
+}
+
+.service-text p {
+  font-size: 1.1rem;
+  line-height: 1.8; /* Increase line height for better readability */
+  text-align: left; /* Align the paragraph text to the left */
+}
+
+.service-reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body1{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.globe {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  z-index: 10;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  position: absolute;
+  z-index: 5;
+  opacity: 0.2;
+}
+
+.grid div {
+  background-color: #333;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.grid div:nth-child(even) {
+  background-color: #222;
+}
+
+.grid div:nth-child(odd) {
+  background-color: #444;
+}
+
+
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+/* Investment insight */
+/* Investment insight */
+
+
+.investment-insight {
+  display: flex;
+  flex-direction: row; /* Aligns text/icons and image horizontally */
+  align-items: flex-start; /* Aligns items to the top */
+  justify-content: space-between; /* Ensures the text and image are spaced correctly */
+  padding: 20px;
+  background-color: white;
+}
+
+.text-icons {
+  display: flex;
+  flex-direction: column; /* Puts text and icons in a vertical column */
+  justify-content: flex-start; /* Align text and icons to the top */
+  width: 50%; /* The text/icons take up 50% of the width */
+}
+
+.investment-insight h2 {
+  color: blue;
+  font-size: 3rem;
+  margin-bottom: 0px; /* Remove space below h2 */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+.investment-insight h3 {
+  color: blue;
+  font-size: 1.5rem;
+  margin-top: -10px; /* Pull h3 closer to h2 */
+  margin-bottom: 0; /* Remove space below h3 */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'Bagota Loss Normal';
+  src: url('/path-to-fonts/BagotaLossNormal.woff2') format('woff2'),
+       url('/path-to-fonts/BagotaLossNormal.woff') format('woff'),
+       url('/path-to-fonts/BagotaLossNormal.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.investment-insight p {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color:black;
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+}
+
+.bulb-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.bulb-icons i {
+  font-size: 3.5rem;
+  color: rgb(28, 28, 28);
+}
+
+.investment-insight img {
+  width: 50%; /* Makes the image span the other 50% of the container */
+  height: auto;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Styling for the CTA link */
+.cta-link {
+  display: inline-block;
+  margin-top: 20px; /* Space between the paragraph and link */
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Investment insight */
+/* Investment insight */
+
+
+
+/* Testimonials*/
+/* Testimonials */
+
+#Testimonials {
+  width: 100%;
+  padding: 20px;
+}
+
+.image-text-containerT {
+  display: flex;
+  align-items: center; /* Vertically aligns the content */
+  margin-bottom: 40px; /* Adds space between sections */
+}
+
+.image-text-containerT img {
+  width: 30%; /* Makes the images take up 30% of the container */
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the area */
+  margin-right: 20px; /* Adds space between the image and the text */
+}
+
+.text-content {
+  max-width: 60%;
+}
+
+.text-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px; /* Adds spacing between the paragraph and the name */
+}
+
+/* Reverse layout for the second container */
+.reverse-layout {
+  flex-direction: row-reverse; /* This switches the order for the second container */
+}
+
+.reverse-layout img {
+  margin-right: 0;
+  margin-left: 20px; /* Adds space between the image and the text on the reversed layout */
+}
+
+h3 {
+  font-size: 1rem;
+  color: blue;
+  margin-top: 10px; /* Adds space between the paragraph and the name */
+}
+
+/* Blue thin line between the two containers */
+.blue-line {
+  border: none;
+  border-top: 2px solid blue; /* Creates a thin blue line */
+  margin: 40px 0; /* Adds space around the line */
+}
+
+
+
+
+
+
+/* Testimonials*/
+/* Testimonials */
+
+
+
+/* Podcast*/
+/* Podcast */
+
+
+
+.podcast {
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay text (Title) */
+.overlay-text {
+  position: absolute;
+  top: 30%;
+  left: 70%; /* Center align */
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px 15px;
+  z-index: 10;
+  font-size: 3rem;
+  text-align: center;
+  width: auto;
+  border-bottom: 4px solid white;
+  line-height: 1.2;
+ 
+}
+
+/* "Podcast" subtitle */
+.subtitle {
+  font-size: 2.5rem;
+  display: block;
+  margin-top: -8px;
+  left: 70%; /* Center align */
+}
+
+/* Follow text (placed below the white line but above buttons) */
+.follow-text {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: auto;
+  z-index: 10;
+  left: 70%; /* Center align */
+}
+
+/* Button container */
+.button-container {
+  position: absolute;
+  top: 62%; /* Adjusted to ensure alignment below text */
+  left: 50%; /* Center align */
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  gap: 20px; /* Add spacing between buttons */
+  margin-top: 3rem;
+  left: 70%; /* Center align */
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: none;
+}
+
+.btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/* Podcast*/
+/* Podcast */
+
+
+
+
+
+
+
+
+
+
+
+  

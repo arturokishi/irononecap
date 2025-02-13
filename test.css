@@ -1,0 +1,275 @@
+/* General styling */
+body {
+
+    background-color:green;
+    
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%; /* Allow the full width of the container */
+  margin: 2rem auto;
+  gap: 3rem; /* Adds space between the image and text */
+}
+
+.image-container-service{
+  position: relative;
+  width: 35%; /* Keep this to maintain image size */
+}
+
+.image-background-service {
+  position: absolute;
+  top: -20px; /* Increase the offset to separate more */
+  left: -20px; /* Increase the offset to separate more */
+  width: calc(100% + 20px); /* Adjust the width to match the new offset */
+  height: calc(100% + 20px); /* Adjust the height to match the new offset */
+  border: 3px solid black; /* Only show the border */
+  border-radius: 15px; /* Match the image corners */
+  z-index: -1; /* Place behind the image */
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Adds rounded corners */
+  position: relative;
+  z-index: 1; /* Ensure the image stays on top */
+}
+
+.service-text {
+  flex: 1;
+  text-align: left; /* Align the text to the left */
+  padding-left: 1rem;
+}
+
+.service-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #00528C;
+}
+
+.service-text p {
+  font-size: 1.1rem;
+  line-height: 1.8; /* Increase line height for better readability */
+  text-align: left; /* Align the paragraph text to the left */
+}
+
+.service-reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+.image-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-container-service {
+  position: relative;
+  width: 40%;
+}
+
+.image-background-service {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  border: 3px solid black;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.image-container-service img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.image-text-container p {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.text-with-line {
+  position: relative;
+  padding-left: 20px; /* Padding to add space between text and vertical line */
+  border-left: 5px solid blue; /* Vertical blue line */
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+
+
+
+
+
+
+
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between; /* Add space between the two inputs */
+  margin-bottom: 15px; /* Space between rows */
+}
+
+input[type="text1"],
+input[type="email"] {
+  width: 48%; /* Make each input smaller to fit two in one row */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem; /* Smaller font size */
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #888;
+  font-size: 0.9rem; /* Placeholder font size */
+}
+
+
+
+
+
+
+
+
+
+
+
+.investment-insight {
+  display: flex;
+  flex-direction: row; /* Aligns text/icons and image horizontally */
+  align-items: flex-start; /* Aligns items to the top */
+  justify-content: space-between; /* Ensures the text and image are spaced correctly */
+  padding: 20px;
+  background-color: white;
+}
+
+.text-icons {
+  display: flex;
+  flex-direction: column; /* Puts text and icons in a vertical column */
+  justify-content: flex-start; /* Align text and icons to the top */
+  width: 50%; /* The text/icons take up 50% of the width */
+}
+
+.investment-insight h2 {
+  color: blue;
+  font-size: 3rem;
+  margin-bottom: 0px; /* Remove space below h2 */
+}
+
+.investment-insight h3 {
+  color: blue;
+  font-size: 1.5rem;
+  margin-top: -10px; /* Pull h3 closer to h2 */
+  margin-bottom: 0; /* Remove space below h3 */
+}
+
+.investment-insight p {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.bulb-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.bulb-icons i {
+  font-size: 3.5rem;
+  color: rgb(28, 28, 28);
+}
+
+.investment-insight img {
+  width: 50%; /* Makes the image span the other 50% of the container */
+  height: auto;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Styling for the CTA link */
+.cta-link {
+  display: inline-block;
+  margin-top: 20px; /* Space between the paragraph and link */
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.mexico-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+

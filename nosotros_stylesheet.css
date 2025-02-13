@@ -1,0 +1,1044 @@
+/* NAV*/
+/* NAV*/
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 70% opacity */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start; /* Aligns the logo to the left */
+  align-items: center; /* Vertically center the logo */
+  max-width: 100px; /* Constrains the logo to a max width */
+  max-height: 50px; /* Constrains the logo to a max height */
+}
+
+.logo img {
+  width: 100%; /* Ensures the image scales according to the container */
+  height: auto; /* Keeps the aspect ratio intact */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Keeps nav items centered */
+  flex-grow: 1; /* Ensures it occupies all available space between logo and buttons */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.nav-links li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  border-right: 1px solid white;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+}
+
+.get-in-touch {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.get-in-touch button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* White button */
+.white-button {
+  background-color: white;
+  color: black;
+}
+
+.white-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Black button */
+.black-button {
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 70% opacity */
+  color: white;
+  border-color: white;
+}
+
+.black-button:hover {
+  background-color: #333;
+}
+
+
+
+
+/* NAV*/
+/* NAV*/
+
+
+/* Intro*/
+/* Intro*/
+
+.blog-post {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.blog-post {
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-height: 600px; /* Limit the image's height */
+  overflow: hidden;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1; /* Keep the image on top */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 255, 0.5); /* Blue overlay with 50% opacity */
+  z-index: 2; /* Overlay is above the image */
+}
+
+
+
+
+.blog-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  z-index: 10;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.blog-text h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: white;
+  margin-left: 50px;
+}
+
+/* Blue header below the image */
+.content-wrapper {
+  padding: 20px;
+}
+
+.blue-header {
+  color: blue;
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 30px; /* Space at the bottom */
+  width: 90%; /* Adjust the width of the header */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+  margin-left: auto; /* Horizontally center */
+  margin-right: auto; /* Horizontally center */
+}
+
+
+/* Thinner text for "Quienes" */
+.thin-text {
+  font-weight: 100; /* Light or thin font weight */
+  font-size: 2.5rem; /* Ensure it has the same size */
+}
+
+/* Bolder text for "Somos?" */
+.bold-text {
+  font-weight: 800; /* Bold font weight */
+  font-size: 2.5rem; /* Same size for consistency */
+}
+
+
+.content-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left; /* Align the text to the left */
+  width: 90%; /* Reduce the width to 40% */
+  font-family: 'Bagota Loss Normal', 'Montserrat', sans-serif;
+  margin: 0 auto; /* Center the text block horizontally */
+}
+
+
+
+
+
+/* Intro*/
+/* Intro*/
+
+
+
+  
+  .read-more-button {
+    display: inline-block;
+    background-color: blue;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-button:hover {
+    background-color: blue;
+  }
+
+
+
+
+
+
+
+
+
+
+  .register-form-container {
+    position: relative;
+    height: 100vh;
+  }
+
+
+
+  .heading-container {
+    text-align: center; /* Center the heading and line */
+    margin-bottom: 20px;
+  }
+  
+  .heading-with-line {
+    color: #fff; /* Text color */
+    font-size: 2rem; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Space between text and the line */
+  }
+
+  .heading-with-line1 {
+    color: #fff; /* Text color */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Space between text and the line */
+  }
+  
+  .thin-white-line {
+    width: 100%; /* Line width (adjust as needed) */
+    height: 2px; /* Thickness of the line */
+    background-color: white; /* Color of the line */
+  }
+
+
+
+
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 0.2px; /* Add 15px vertical space between all elements */
+  }
+  
+
+
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 15px; /* 15px vertical space between inputs */
+    box-sizing: border-box;
+  }
+  
+  .input-row {
+    display: flex;
+    justify-content: space-between; /* Space between the two inputs */
+    margin-bottom: 5px; /* 15px space between rows */
+  }
+  
+  .input-row1 {
+    display: flex;
+    margin-bottom: 15px; /* 15px space between this input and others */
+  }
+
+  .input-rowID {
+    display: flex;
+    margin-bottom: 15px; /* 15px space between this input and others */
+    margin-top: 10px;
+  }
+  
+  input[type="text1"],
+  input[type="email"] {
+    width: 48%; /* Make each input smaller to fit two in one row */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 15px; /* 15px space between inputs */
+    box-sizing: border-box;
+  }
+  
+  input::placeholder {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .input-row3 {
+    display: flex;
+    justify-content: space-between; /* Space between the three inputs */
+    margin-bottom: 15px; /* 15px space between rows */
+  }
+  
+  input[type="text2"],
+  input[type="email"] {
+    width: 30%; /* Adjust to fit three inputs per row */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 15px; /* 15px space between inputs */
+    box-sizing: border-box;
+  }
+  
+  
+.submit-btn {
+  display: block;   /* Ensure the button takes the full width available */
+  text-align: left; /* Align text inside the button to the left */
+  margin-left: 0;   /* Align the button itself to the left */
+}
+
+.register {
+  background-color: black;      /* Black background */
+  color: white;                 /* White text */
+  padding: 10px 60px;           /* Smaller padding for horizontal size */
+  border: none;                 /* Remove the default border */
+  border-radius: 25px;          /* Rounded edges */
+  text-align: center;           /* Center the text */
+  display: inline-block;        /* Makes the button take only necessary width */
+  font-size: 1rem;              /* Adjust font size */
+  margin: 20px auto;            /* Center the button horizontally */
+  width: auto;                  /* Let the width adjust to the content */
+  cursor: pointer;             /* Change cursor to pointer when hovering */
+}
+
+
+
+
+
+
+  
+
+  
+  
+  
+  .register-form-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250%;
+    background-color: #130f89; /* darker background color */
+    z-index: -1; /* put it behind the form */
+    margin-top: 80px;
+  }
+  
+  .register-form {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: blue;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+.register-form label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form input[type="clave"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px blue;
+}
+
+.register-form button[type="submit"] {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button[type="submit"]:hover {
+  background-color: blue;
+}
+
+.iconcontainerform {
+  width: 375px; /* same width as the form */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* add this to allow items to wrap to the next line */
+  margin: 10px; /* add some margin between items */
+}
+
+.icon-form {
+  width: 70px;
+  height: 70px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 20px;
+  display: flex; /* make it a flex container */
+  justify-content: center; /* center the content horizontally */
+  align-items: center; /* center the content vertically */
+}
+
+.button-form {
+  margin-left: 20px;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(4, 4, 85);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex; /* make it a flex container */
+  justify-content: center; /* center the content horizontally */
+  align-items: center; /* center the content vertically */
+}
+
+.button-documents {
+  background-color: #ffffff; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+  
+
+
+
+
+
+
+
+
+/* Circles*/
+/* Circles*/
+
+
+
+.metric-container {
+  width: 85%;
+  padding: 1rem;
+  margin: 30px auto;
+}
+
+.metric-title {
+  color: blue;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  display: inline-block;
+  text-align: left;
+}
+
+.metric-circle-row {
+  display: flex; /* Align items horizontally in a row */
+  justify-content: center; /* Center the items horizontally */
+  gap: 150px; /* Space between each circle container */
+  margin-top: 30px;
+}
+
+.metric-circle-container {
+  display: flex;
+  flex-direction: column; /* Stack circle and description vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center;
+  position: relative;
+}
+
+.metric-circle-container:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%; /* Position the line in the middle */
+  left: 100%; /* Place it to the right of the circle */
+  width: 150px; /* Adjust the length of the line */
+  height: 2px; /* Thickness of the line */
+  background-color: gray; /* Color of the line */
+  transform: translateY(-50%); /* Center the line vertically */
+}
+
+.metric-circle {
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column; /* Keep the circle content stacked */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+.metric-number {
+  text-align: center;
+}
+
+.plus-number {
+  font-size: 48px; /* Size of +25 */
+  font-weight: 700; /* Bold font */
+  color: #0056b3; /* Blue color for +25 */
+}
+
+.years-text {
+  font-size: 24px; /* Font size for AÑOS */
+  color: gray; /* Gray color for AÑOS */
+}
+
+.metric-description {
+  font-size: 16px; /* Adjust the size of the description text */
+  color: #333; /* Darker text color */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space between the circle and description */
+}
+
+.metric-circle i {
+  font-size: 4rem;
+  color: #007bff;
+}
+
+.metric-separator {
+  width: 300px;
+  height: 2px;
+  background-color: gray;
+  margin: 0 20px;
+}
+
+/* Adjust the blue border effect */
+.metric-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#0056b3 0% 25%, transparent 25% 100%);
+  -webkit-mask: radial-gradient(circle, transparent 49.5%, #fff 50.5%);
+  mask: radial-gradient(circle, transparent 49.5%, #fff 50.5%);
+}
+
+
+
+
+/* Circles*/
+/* Circles*/
+
+/* C*/
+/* C*/
+
+.counter-wrapper {
+  position: relative;
+  width: 100%; /* Make the wrapper take the full width */
+  margin-top: 100px;
+margin-bottom: 300px;
+}
+
+.black-line {
+  position: absolute;
+  top: 30%; /* Adjust the position of the line */
+  left: 0;
+  width: 100%; /* Full page width */
+  height: 120px; /* Height of the black line */
+  background-color: rgb(9, 9, 140);
+  z-index: -1; /* Position behind the counter-container */
+  margin-bottom: 300px;
+}
+
+
+
+.counter-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.counter-number {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+
+
+/* C*/
+/* C*/
+
+
+/* Affiliates*/
+/* Affiliates*/
+
+
+.counter-container {
+  position: relative; /* Allows the black line to be positioned behind */
+  width: 60rem;
+  padding: 2rem;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 15px;
+  z-index: 1; /* Ensures the container is above the black line */
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100vw;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 300vw; /* Adjust based on the number of slides */
+  transition: none; /* No animation */
+  transform: translateX(0); /* Keeps it static at the first slide */
+}
+
+
+
+.affiliates {
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+  
+  .affiliate-logos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+  }
+  
+  .affiliate-logos li {
+    margin-right: 20px;
+    flex: 0 0 auto;
+  }
+
+  .affiliates h2 {
+
+    text-align: center;
+    font-size: 2rem;
+    color: blue;
+
+
+  }
+  
+/* Affiliates*/
+/* Affiliates*/
+
+
+
+
+
+
+
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .news-image {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    z-index: 1;
+  }
+  
+  .news-text {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .news-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: blue;
+  }
+  
+  .news-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+
+
+  .news1{
+    width:15%;
+    height: 15rem;
+    margin-top: -150px;
+    z-index: 2;
+    margin-left: -1000px
+
+  }
+
+  .news2{
+    width:15%;
+    height: 15rem;
+    margin-top: -240px;
+    z-index: 2;
+    margin-left: -300px
+
+  }
+
+  .news3{
+    width:15%;
+    height: 15rem;
+    margin-top: -240px;
+    z-index: 2;
+    margin-left: 400px
+
+  }
+
+  .news4{
+    width:15%;
+    height: 15rem;
+    margin-top: -240px;
+    z-index: 2;
+    margin-left: 1100px
+
+  }
+
+
+
+
+
+/* Newsletter */
+/* Newsletter */
+  .news-container{
+
+    margin-top: 50px;
+  }
+
+  .newsletter-header {
+    background-image: url('https://github.com/arturokishi/irononecap/blob/main/banner-noticias-nosotros.png?raw=true'); /* Replace with your actual image URL */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+  }
+  
+  .newsletter-header h1 {
+    color: white;
+    text-align: left;
+    font-size: 5rem;
+    margin-bottom: 110px;
+    margin-left: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: Add shadow for better contrast */
+  }
+  
+/* Newsletter */
+/* Newsletter */
+
+
+
+
+
+
+/* Registrados*/
+/* Registrados*/
+.registrados {
+  background-color: #f3f4f6; /* Light background color for a clean look */
+  padding: 2rem; /* Add padding for spacing */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center;
+  position: relative;
+  height: auto; /* Make the height responsive */
+  border-radius: 8px; /* Optional: Add rounded corners to the whole div */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the button */
+  
+}
+
+.logo-registrados {
+  position: absolute;
+  top: 10px; /* Adjust to fit padding and overall layout */
+  left: 10px;
+  display: flex;
+  justify-content: flex-start; /* Aligns the logo to the left */
+  align-items: center; /* Vertically centers the logo */
+  width: auto; /* Let the width adjust based on the content */
+  height: auto; /* Let the height adjust based on the content */
+  max-width: 300px; /* Constrain the logo to a max width */
+  max-height: 100px; /* Constrain the logo to a max height */
+  overflow: hidden; /* Ensures the logo is contained within the defined size */
+}
+
+.logo-registrados img {
+  width: 100%; /* Ensure the image scales down proportionally */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: contain; /* Ensures the image fits within the box without distortion */
+}
+
+
+
+
+.registrados h2 {
+  color: #1f2937; /* Darker color for better contrast */
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem; /* Add spacing below the heading */
+}
+
+.Box-registrados {
+  background-color: white;
+  border-radius: 8px; /* Soft rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px; /* Limit the width for better readability */
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Adds space between elements inside the box */
+  text-align: left;
+}
+
+.Box-registrados h2 {
+  color: #007bff; /* Use a blue color for contrast */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.Box-registrados h3 {
+  color: #333; /* Dark text color */
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.Box-registrados p {
+  color: #6b7280; /* Neutral gray for description text */
+  font-size: 1.1rem;
+  line-height: 1.6; /* Line height for better readability */
+}
+
+.button-registrados {
+  display: flex;
+  justify-content: flex-end; /* Align button to the right */
+}
+
+.button-registrados button {
+  background-color: white; /* Blue background for the button */
+  color: blue; /* White text */
+  padding: 0.75rem 1.5rem; /* Padding for a more clickable area */
+  border: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the button */
+}
+
+.button-registrados button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .Box-registrados {
+    padding: 1rem; /* Adjust padding for smaller screens */
+    max-width: 100%; /* Make the box full-width on small devices */
+  }
+
+  .registrados h2 {
+    font-size: 2rem; /* Adjust heading size for small screens */
+  }
+
+  .Box-registrados h2 {
+    font-size: 1.5rem; /* Smaller heading in the box */
+  }
+
+  .button-registrados {
+    justify-content: center; /* Center the button on small screens */
+  }
+}
+
+
+
+
+/* Registrados*/
+/* Registrados*/
+
+
+
+
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 0; /* Lower the header's z-index to make the container1 appear above */
+}
+
+h1 {
+    margin: 0;
+    margin-top: 200px;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: -70px;
+    z-index: 1;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
